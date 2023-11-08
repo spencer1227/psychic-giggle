@@ -14,7 +14,6 @@ createThought(req, res) {
            {_id:req.body.userID},
            {$push:{ thoughts:dbThoughtData._id}},
            {new:true}
-
        )
     
    })
@@ -58,15 +57,12 @@ deleteThought(req, res) {
     .then((thought) => {
         if(!thought){
             res.status(404).json({message: 'No thought with that ID'}) 
-
-
         }      
         
         return user.findOneAndUpdate(
             {_id:req.body.userID},
             {$pull:{thoughts:thought._id}},
             {new:true}
- 
         )
    }).then(() => res.json({message: 'This thought has been deleted.'})).catch((err) => res.status(500).json(err));
 },
