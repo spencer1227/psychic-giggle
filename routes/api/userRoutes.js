@@ -8,8 +8,9 @@ const {
   deleteUser,
   addFriend,
   removeFriend,
-} = require("../../controller/userController");
+} = require("../../controllers/userController");
 
+//base url is localhost:3001/api/users
 router.route("/").get(getAllUsers).post(createUser);
 
 router.route("/:id").get(getUserById).put(updateUser).delete(deleteUser);
