@@ -3,18 +3,25 @@ const { populate } = require("../models/user");
 
 const thoughtController = {
 
-getAllThoughts(req, res) {
-    thought.find().then((thought) => res.json(thought)).catch((err) => res.status(500).json(err));
+async getAllThoughts(req, res) {
+  try{
+  const thoughts = await thought.find()
+  console.log(thoughts)
+  res.json(thoughts)
+  } catch(err) {res.status(500).json(err)};
+
 
 },
 createThought(req, res) {
    thought.create(req.body)
    .then((dbThoughtData) => {
-       return user.findOneAndUpdate(
-           {_id:req.body.userID},
-           {$push:{ thoughts:dbThoughtData._id}},
-           {new:true}
-       )
+      //  return user.findOneAndUpdate(
+      //      {_id:req.params.id},
+      //      {$push:{ thoughts:dbThoughtData._id}},
+      //      {new:true}
+      //  )
+      console.log(dbThoughtData)
+       res.json(dbThoughtData)
     
    })
    .then(userData => res.json(userData))

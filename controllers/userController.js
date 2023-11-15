@@ -3,7 +3,8 @@ const { thought, user } = require("../models");
 
 const userController = {
     getAllUsers(req, res) {
-        user.find().then((users) => res.json(users)).catch((err) => res.status(500).json(err));
+        user.find()
+        .then((users) => res.json(users)).catch((err) => res.status(500).json(err));
     },
 
     createUser(req, res) {
