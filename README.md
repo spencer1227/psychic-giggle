@@ -1,4 +1,4 @@
-# Employee Tracker
+# Social Network API
 
 ## My Task
 MongoDB is a popular choice for many social networks due to its speed with large amounts of data and flexibility with unstructured data. Over the last part of this course, you’ll use several of the technologies that social networking platforms use in their full-stack applications. Because the foundation of these applications is data, it’s important that you understand how to build and structure the API first.
@@ -36,18 +36,16 @@ THEN I am able to successfully create and delete reactions to thoughts and add a
 To start, I created routes and models pages for each the user and the thoughts. From there, I import the respective date into each folder's index file
 
 ## Technology Used
-react
-route-react
-route-react-dom
+express
 mongoose
 Insomnia
 MongoDB
 
-
 ## Links 
-
+Github Link: [https://github.com/spencer1227/psychic-giggle.git]
 
 ## Video 
+Video: 
 
 
 
