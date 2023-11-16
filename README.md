@@ -47,5 +47,5 @@ Github Link: [https://github.com/spencer1227/psychic-giggle.git]
 ## Video 
 Video: [https://drive.google.com/file/d/1MzrUsEg-Q2cNya8hdj7z4zvc_JLdRL9B/view]
 
-
+Video with MongoDB Compass: [https://drive.google.com/file/d/15LkMkBaUgBKWBVyODFv98VoVWBgd0HN8/view]
 
