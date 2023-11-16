@@ -32,20 +32,20 @@ WHEN I test API POST and DELETE routes in Insomnia
 <br>
 THEN I am able to successfully create and delete reactions to thoughts and add and remove friends to a user’s friend list
 
-## Mock Up
-To start, I created routes and models pages for each the user and the thoughts. From there, I import the respective date into each folder's index file
-
 ## Technology Used
 express
+<br>
 mongoose
+<br>
 Insomnia
+<br>
 MongoDB
 
 ## Links 
 Github Link: [https://github.com/spencer1227/psychic-giggle.git]
 
 ## Video 
-Video: 
+Video: [https://drive.google.com/file/d/1MzrUsEg-Q2cNya8hdj7z4zvc_JLdRL9B/view]
 
 
 
